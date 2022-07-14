@@ -1,6 +1,27 @@
 30 lines (26 sloc)  3.1 KB
 
-## Olá eu sou a Cristopher Altrão Ruotolo, estudante e desenvolvedor de Sistemas!
+## Olá eu sou a Cristopher Altrão Ruotolo, Estudante e Desenvolvedor de Sistemas!
+```solidity
+contract Profile {
+    string public nickname = "Menix";
+    string public pronouns = "He | Him";
+    string public currentFocus = "ReactJS / NextJS";
+    string[] internal skills;
+    function getSkills() public returns (string[] memory) {
+        skills = [
+            string("JavaScript"),
+            "HTML",
+            "CSS",
+            "GIT"
+        ];
+        return skills;
+    }
+    function fun() public view returns (string memory) {
+        return
+            "Wubba lubba dub dub'";
+    }
+}
+```
 <div align="center">
   <a href="https://github.com/cristopherruotolo">
   <img height="150em" src="https://github-readme-stats.vercel.app/api?username=cristopherruotolo&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
