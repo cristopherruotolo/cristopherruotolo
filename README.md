@@ -5,7 +5,7 @@
 contract Profile {
     string public nickname = "Menix";
     string public pronouns = "He | Him";
-    string public currentFocus = "ReactJS / NextJS";
+    string public currentFocus = "Java / Angular / React";
     string[] internal skills;
     function getSkills() public returns (string[] memory) {
         skills = [
