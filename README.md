@@ -1,24 +1,15 @@
 30 lines (26 sloc)  3.1 KB
 
 ## Olá eu sou a Cristopher Altrão Ruotolo, Estudante e Desenvolvedor de Sistemas!
-```solidity
-contract Profile {
-    string public nickname = "Menix";
-    string public pronouns = "He | Him";
-    string public currentFocus = "Java / Angular / React";
-    string[] internal skills;
-    function getSkills() public returns (string[] memory) {
-        skills = [
-            string("JavaScript"),
-            "HTML",
-            "CSS",
-            "GIT"
-        ];
-        return skills;
-    }
-    function fun() public view returns (string memory) {
-        return
-            "Wubba lubba dub dub'";
+```kotlin
+class Profile {
+    val nickname = "Menix"
+    val pronouns = "He | Him"
+    val currentFocus = "GO"
+    val skills = arrayOf("Java", "Kotlin", "TypeScript", "JavaScript", "HTML", "CSS", "GIT")
+
+    fun getSkills(): Array<String> {
+        return skills
     }
 }
 ```
